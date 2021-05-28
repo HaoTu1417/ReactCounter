@@ -2,6 +2,9 @@ import Navbar from "./components/navbar";
 import "./App.css";
 import React, { Component } from "react";
 import Counters from "./components/counters";
+import Grid from "./components/grid";
+import Header from "./components/header";
+
 class App extends Component {
   state = {
     counters: [
@@ -38,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar
+        {/* <Navbar
           totalCounters={this.state.counters.filter((c) => c.value > 0).length}
         />
         <main className="container">
@@ -48,7 +51,9 @@ class App extends Component {
             onIncrement={this.handleIncrement}
             onDelete={this.handleDelete}
           />
-        </main>
+        </main> */}
+        <Header />
+        {/* <Grid /> */}
       </React.Fragment>
     );
   }
